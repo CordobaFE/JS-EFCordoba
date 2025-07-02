@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bambu Masajes - Servicios</title>
+    <link rel="shortcut icon" href="../multimedia/icono-buda.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@680&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="branding">
+                <img src="../multimedia/icono-buda.jpg" alt="Logo Bambu Masajes" class="logo">
+                <h1 class="titulo">Bambu Masajes</h1>
+            </div>
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/reservas.html">Reservas</a></li>
+                    <li><a href="../pages/experiencias.html">Experiencias</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="reserva-container">
+        <h2 class="reserva-titulo">Reservá tu sesión</h2>
+
+        <form class="form-reserva">
+            <div class="form-group">
+                <label for="terapeuta">Seleccionar Terapeuta:</label>
+                <select id="terapeuta" name="terapeuta">
+                    <option value="">-- Seleccionar --</option>
+                    <option value="terapeuta1">Yenny</option>
+                    <option value="terapeuta2">Franco</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="fecha">Día disponible:</label>
+              <input type="date" id="fecha" name="fecha">
+            </div>
+
+            <div class="form-group">
+                <label for="horario">Horarios disponibles:</label>
+                <select id="horario" name="horario">
+                    <option value="">-- Seleccionar --</option>
+                     <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                </select>
+            </div>
+
+            <div class="form-group doble">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                   <label for="apellido">Apellido:</label>
+                   <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+
+            <div class="form-group doble">
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comentario">Comentario sobre la cita (opcional):</label>
+              <textarea id="comentario" name="comentario" rows="3"></textarea>
+            </div>
+
+            <div class="form-precio">
+                <h3>Precio: <span>$50.000</span></h3>
+                <p>Descuento: <span>$0</span></p>
+               <p>Precio total: <strong>$50.000</strong></p>
+                <p>Depositar reserva: <strong>$15.000</strong></p>
+                <p>Luego paga: <strong>$35.000</strong></p>
+            </div>
+
+            <div class="form-group cupon">
+              <label for="cupon">Cupón de descuento:</label>
+              <input type="text" id="cupon" name="cupon" placeholder="Ingrese código">
+             <button type="button">Aplicar</button>
+            </div>
+
+            <button type="submit" class="btn-reservar">Confirmar Reserva</button>
+        </form>
+    </main>
+
+    <footer class="pie">
+        <div class="info-contacto">
+            <div class="contacto-item">
+             <img src="../multimedia/ubiicon.png" alt="ubicacion" class="icono">
+             <h4>Visítanos en Monroe 4518</h4>
+            </div>
+
+            <div class="contacto-item">
+                <img src="../multimedia/correoicon.png" alt="Correo" class="icono">
+                <h4>estoesunejemplo@gmail.com</h4>
+            </div>
+
+            <div class="contacto-item">
+                <img src="../multimedia/wspicon.png" alt="WhatsApp" class="icono">
+                <h4>11-2345 6789</h4>
+            </div>
+         </div>
+
+        <section class="enlaces">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+          <img src="../multimedia/facefooter.png" alt="Facebook" class="red-icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <img src="../multimedia/igfooter.png" alt="Instagram" class="red-icon">
+          </a>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
+         <img src="../multimedia/xfooter.png" alt="X" class="red-icon">
+          </a>
+        </section>
+        <div class="derechos">
+          <p>© Derechos reservados a Bambu Masajes</p>
+        </div>
+
+    </footer>   
+</body>
+</html>
