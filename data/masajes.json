@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "nombre": "Circuito de Renovación",
+    "descripcion": "Disponible en sesiones de 60, 90 o 120 minutos.",
+    "duraciones": [
+      {
+        "minutos": 60,
+        "precio": 25000
+      },
+      {
+        "minutos": 90,
+        "precio": 37500
+      },
+      {
+        "minutos": 120,
+        "precio": 50000
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Circuito de Relajación",
+    "descripcion": "Disponible en sesiones de 60, 90 o 120 minutos.",
+    "duraciones": [
+      {
+        "minutos": 60,
+        "precio": 32000
+      },
+      {
+        "minutos": 90,
+        "precio": 48000
+      },
+      {
+        "minutos": 120,
+        "precio": 64000
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Circuito de Lujo",
+    "descripcion": "Disponible en sesiones de 60, 90 o 120 minutos.",
+    "duraciones": [
+      {
+        "minutos": 60,
+        "precio": 45000
+      },
+      {
+        "minutos": 90,
+        "precio": 67500
+      },
+      {
+        "minutos": 120,
+        "precio": 90000
+      }
+    ]
+  }
+]

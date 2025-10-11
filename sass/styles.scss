@@ -1,0 +1,596 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat",sans-serif;
+
+}
+
+body{
+  background-color: #83c5be;
+}
+
+header {
+  background-color: #ffc857;
+  padding: 10px 20px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #006d77;
+}
+
+.inicio_img{
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+.card-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #83c5be;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.pie {
+  background-color: #006d77;
+  color: #ecf0f1;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.info-contacto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.info-contacto h5 {
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+}
+
+.enlaces a {
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.red-icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.enlaces a:hover {
+    transform: scale(1.2);
+    background-color: #ecf0f1;
+    cursor: pointer;
+}
+
+.derechos {
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 0.9rem;
+    color: #ecf0f1;
+    opacity: 0.8;
+}
+
+/*Servicios*/
+
+.servicios-container {
+  padding: 40px 20px;
+  background-color: #83c5be;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.servicio-img {
+  width: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.servicio-info {
+  flex: 1;
+}
+
+.servicio-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #006d77;
+}
+
+.servicio-info p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.precio {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+.btn-reservar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-reservar:hover {
+  background-color: #0056b3;
+}
+
+/*Reservas*/
+.reserva-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.reserva-titulo {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #006d77;
+}
+
+.form-reserva {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.doble {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+.form-precio {
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 8px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  word-break: break-word; /* Evita que se encimen textos largos */
+}
+
+.form-precio h3,
+.form-precio p {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que se acomode en pantallas chicas */
+}
+
+.form-precio span,
+.form-precio strong {
+  color: #007bff;
+  margin-left: 10px;
+}
+
+
+.form-group.cupon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-group.cupon input {
+  flex: 1;
+}
+
+.form-group.cupon button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reservar {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #006d77;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-reservar:hover {
+  background-color: #004f56;
+}
+
+/*experiencias*/
+.experiencias-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.experiencias-titulo {
+  color: #006d77;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.reseña {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.reseña-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reseña-header h3 {
+  margin: 0;
+  color: #333;
+}
+
+.estrellas {
+  color: #ffc107; /* color dorado para estrellas */
+  font-size: 18px;
+}
+
+.texto-reseña {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*Nosotros*/
+.nosotros-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.acordeon {
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 0 15px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.acordeon summary {
+  padding: 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+  color: #006d77;
+  font-size: 16px;
+  list-style: none;
+  position: relative;
+}
+
+.acordeon summary::-webkit-details-marker {
+  display: none; /* Oculta la flechita por defecto */
+}
+
+.acordeon summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+}
+
+.acordeon[open] summary::after {
+  content: "−";
+}
+
+.acordeon p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.mapa-nosotros {
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+/*  Responsive - tablets */
+@media (max-width: 1024px) {
+  .logo {
+    margin-left: 20px;
+  }
+
+  .titulo {
+    margin-left: 10px;
+    font-size: 22px;
+  }
+
+  .nav-list {
+    position: static;
+    transform: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enlaces {
+    justify-content: center;
+    padding-top: 30px;
+  }
+}
+
+/* Responsive - celulares */
+@media (max-width: 600px) {
+  .logo {
+    width: 40px;
+    margin-left: 0;
+  }
+
+  .branding {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .titulo {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .pie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-contacto, .enlaces {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contacto-item {
+    justify-content: center;
+  }
+
+  .enlaces {
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .derechos {
+    font-size: 0.8rem;
+    padding-top: 1rem;
+  }
+  
+  .form-group.doble {
+    flex-direction: column;
+  }
+
+  .form-group.cupon {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

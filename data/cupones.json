@@ -1,0 +1,14 @@
+[
+  {
+    "codigo": "MASAJE10",
+    "porcentaje": 10
+  },
+  {
+    "codigo": "RELAX20",
+    "porcentaje": 20
+  },
+  {
+    "codigo": "PRIMERVISITA",
+    "porcentaje": 15
+  }
+]
