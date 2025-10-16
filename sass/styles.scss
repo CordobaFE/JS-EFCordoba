@@ -75,9 +75,8 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
-}
-
+    flex-wrap: wrap; 
+  }
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -327,7 +326,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  word-break: break-word; /* Evita que se encimen textos largos */
+  word-break: break-word; 
 }
 
 .form-precio h3,
@@ -335,7 +334,7 @@ header {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Permite que se acomode en pantallas chicas */
+  flex-wrap: wrap; 
 }
 
 .form-precio span,
@@ -417,7 +416,7 @@ header {
 }
 
 .estrellas {
-  color: #ffc107; /* color dorado para estrellas */
+  color: #ffc107; 
   font-size: 18px;
 }
 
@@ -456,7 +455,7 @@ header {
 }
 
 .acordeon summary::-webkit-details-marker {
-  display: none; /* Oculta la flechita por defecto */
+  display: none; 
 }
 
 .acordeon summary::after {
